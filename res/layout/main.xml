@@ -1,13 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:gravity="center"
-    android:orientation="vertical" >
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:baselineAligned="false">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello" />
+	<EditText
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:id="@+id/mainEditText1"
+		android:singleLine="true"
+		android:hint="输入文件的完整路径"
+		android:layout_margin="10dp"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="wrap_content"
+		android:text="选择一个文件路径"
+		android:layout_margin="5dp"
+		android:id="@+id/mainTextView"/>
+
+	<Button
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:text="开始反编译"
+		style="@style/AppTheme"
+		android:id="@+id/mainButton1"
+		android:onClick="openClick"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="5dp"
+		android:layout_margin="10dp"/>
+	<ScrollView
+		android:id="@+id/scrollView"
+		android:layout_width="fill_parent"
+		android:layout_height="200px"
+		android:background="@android:drawable/edit_text"
+		android:scrollbarStyle="outsideOverlay" >
+		<TextView
+			android:id="@+id/mainTextView1"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" />
+	</ScrollView>
+	<TextView
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:text="软件作用: \njava源码反编译工具，\n支持apk,dex,jar,class文件得反编译\n  由于(内核jadx0.61有内存泄漏问题，apk包比较大时导致软件卡死)，\n所以设置一次最多反编译300个源码后停止反编译，\n没反编译完的，软件会自动释放内存，\n然后接着再反编译300个，软件再释放，\n如此循环，直到全部反编译完成。\n软件使用了多线程技术，可加快反编译速度3倍左右"
+		android:id="@+id/TextView"/>
 
 </LinearLayout>
+

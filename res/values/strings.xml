@@ -3,5 +3,31 @@
 
     <string name="hello">Hello World, MainActivity!</string>
     <string name="app_name">decompilejavacode</string>
+	<string name="errer">程序错误</string>
+	<string name="errer1">目录为空</string>
+	<string name="errer2">错误标识符</string>
+	<string name="errer3">没找到java文件</string>
+	<string name="errer4">请输入文件或文件夹的完整路径</string>
+	<string name="errer5">线程正在运行，稍后再试</string>
+	<string name="errer6">错误，文件不存在</string>
+	<string name="errer7">考虑到程序的安全，不处理以javacode结尾的文件夹，希望大家谅解"</string>
+	<string name="errer8">错误，文件夹不存在</string>
+	<string name="print1">保存成功</string>
+	<string name="print2">线程控制台</string>
+	<string name="print3">处理成功总共</string>
+	<string name="print4">"个文件\n保存在"</string>
+	<string name="print5">总计用时</string>
+	<string name="print7">线程控制台\n保存路径为</string>
+	<string name="print6">毫秒</string>
 
+	<string name="file1">.java</string>
+	<string name="file3">/</string>
+	<string name="file_save_end_path">decompilejavacode/</string>
+
+	<string-array name="ui_theme_entries">
+        <item>默认</item>
+        <item>明亮</item>
+    </string-array>
+
+	
 </resources>
